@@ -6,8 +6,8 @@ namespace Api.Services
     public class CarrinhoDeComprasService : ICarrinhoDeComprasService
     {
         private readonly IItemRepository _itemRepository;
-        private double _total;
-        private double _frete;
+        private double _total = 0;
+        private double _frete = 0;
 
         public CarrinhoDeComprasService(IItemRepository itemRepository)
         {
@@ -70,7 +70,7 @@ namespace Api.Services
             }
 
             // Aplica desconto de 10% para carrinhos com valor total acima de R$ 500
-            if (valorItens > 500)
+            if (valorItens >= 500 && valorItens <= 1000)
             {
                 valorItens -= (0.1 * valorItens);
             }

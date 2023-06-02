@@ -6,8 +6,8 @@ namespace Api.Services
     public class CarrinhoDeComprasService : ICarrinhoDeComprasService
     {
         private readonly IItemRepository _itemRepository;
-        private double _total = 0;
-        private double _frete = 0;
+        public double _total = 0;
+        public double _frete = 0;
 
         public CarrinhoDeComprasService(IItemRepository itemRepository)
         {

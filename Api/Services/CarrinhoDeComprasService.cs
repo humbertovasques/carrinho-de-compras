@@ -25,28 +25,36 @@ namespace Api.Services
             double pesoTotal = 0;
             double valorItens = 0;
             int quantidadeItensMesmoTipo = 0;
+            bool descontoFreteAplicado = false;
+
 
             foreach (var item in _itemRepository.GetAllItems())
             {
                 pesoTotal += item.Peso;
                 valorItens += item.Valor;
 
-                // Verifica a quantidade de itens do mesmo tipo
-                foreach (var outroItem in _itemRepository.GetAllItems())
+                //verificação para garantir que o desconto do frete seja aplicado uma única vez
+                if (!descontoFreteAplicado)
                 {
-                    if (outroItem.Nome == item.Nome)
+                    // Verifica a quantidade de itens do mesmo tipo
+                    foreach (var outroItem in _itemRepository.GetAllItems())
                     {
-                        quantidadeItensMesmoTipo++;
+                        if (outroItem.Nome == item.Nome)
+                        {
+                            quantidadeItensMesmoTipo++;
+                            descontoFreteAplicado = true;
+
+                        }
                     }
-                }
 
-                // Aplica desconto de 5% no frete para itens do mesmo tipo
-                if (quantidadeItensMesmoTipo > 2)
-                {
-                    _frete -= 0.05 * item.Valor;
-                }
+                    // Aplica desconto de 5% no frete para carrinho de compras que possuem mais de dois itens do mesmo tipo
+                    if (quantidadeItensMesmoTipo > 2)
+                    {
+                        _frete -= 0.05 * item.Valor;
+                    }
 
-                quantidadeItensMesmoTipo = 0;
+                    quantidadeItensMesmoTipo = 0;
+                }
             }
 
             // Calcula o valor do frete com base no peso total
@@ -63,18 +71,18 @@ namespace Api.Services
                 _frete = pesoTotal * 7.0;
             }
 
-            // Aplica acréscimo de R$ 10 no frete para carrinhos com mais de 5 itens
+            // Aplica acréscimo de R$ 10 no frete para carrinho de compras que tenha mais de 5 itens
             if (_itemRepository.GetAllItems().Count > 5)
             {
                 _frete += 10.0;
             }
 
-            // Aplica desconto de 10% para carrinhos com valor total acima de R$ 500
-            if (valorItens >= 500 && valorItens <= 1000)
+            // Aplica desconto de 10% para carrinhos de compras que custam mais de R$ 500,00
+            if (valorItens > 500 && valorItens <= 1000)
             {
                 valorItens -= (0.1 * valorItens);
             }
-            // Aplica desconto de 20% para carrinhos com valor total acima de R$ 1000
+            // Aplica desconto de 20% para carrinhos de compras que custam mais de R$ 1000,00
             else if (valorItens > 1000)
             {
                 valorItens -= (0.2 * valorItens);

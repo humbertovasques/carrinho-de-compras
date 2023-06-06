@@ -1,6 +1,6 @@
 # Atlantic-carrinho-de-compras
 ## 💻 Sobre o projeto
-<p align="justify"> Projeto desenvolvido durante a disciplina IMD0183 - GERÊNCIA DE CONFIGURAÇÃO E TESTE DE SOFTWARE da RESIDÊNCIA EM TECNOLOGIA DA INFORMAÇÃO - TCE/RN/IMD, contendo uma API REST em C# (incluindo camadas de Controller, Service e Repository) que simule o módulo de um Carrinho de Compras, especialmente o método responsável por fazer o checkout e implementando casos de testes executáveis para o método de checkout
+<p align="justify"> Projeto desenvolvido durante a disciplina IMD0183 - GERÊNCIA DE CONFIGURAÇÃO E TESTE DE SOFTWARE da RESIDÊNCIA EM TECNOLOGIA DA INFORMAÇÃO - TCE/RN/IMD, contendo uma API REST em C# (incluindo camadas de Controller, Service e Repository) que simule o módulo de um Carrinho de Compras, especialmente o método responsável por fazer o checkout, implementando casos de testes executáveis para o método de checkout e um teste que empregue os conceitos de Test Double.
 </p>
 
 ## 🛠️ Tecnologias Utilizadas

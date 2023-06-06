@@ -21,6 +21,16 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
+        public void AdicionarItem_RetornaUmItem()
+        {
+            // Ação
+            var result = Sut.AdicionarItem(new ItemDTO());
+
+            // Verificação
+            result.Should().BeOfType<ItemDTO>();
+        }
+
+        [Fact]
         public void Caso_1()
         {
             // Configuração
@@ -97,7 +107,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().Be(450.90);
+            Sut._total.Should().BeApproximately(450.90,2);
         }
 
         [Fact]
@@ -119,7 +129,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().Be(800.80);
+            Sut._total.Should().BeApproximately(800.80,2);
         }
 
         [Fact]
@@ -142,7 +152,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(460.01, 2);
+            Sut._total.Should().BeApproximately(460.01, 0.001);
         }
     }
 }

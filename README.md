@@ -38,8 +38,8 @@ dotnet run
 
 ## 🤝 Autores
 
--[Humberto](https://github.com/humbertovasques)
--[Jéssica]()
+-[Humberto Vasques](https://github.com/humbertovasques)
+-[Jéssica Silva de Souza](https://github.com/jessicadsz)
 -[Victor Hugo Duarte do Vale](https://github.com/victorhdv)
 
 ## 📜 Licença

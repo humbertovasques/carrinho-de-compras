@@ -144,6 +144,143 @@ namespace Tests.Unit.Services
             // Verificação
             Sut._total.Should().BeApproximately(460.01, 2);
         }
+
+        [Fact]
+        public void Caso_7()
+        {
+            // Configuração
+            var items = new List<ItemDTO>()
+            {
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 2", Peso = 0.3, Valor = 200 },
+                new ItemDTO { Nome = "Item 3", Peso = 0.3, Valor = 200 },
+                new ItemDTO { Nome = "Item 4", Peso = 0.3, Valor = 200.01 },
+                new ItemDTO { Nome = "Item 5", Peso = 0.3, Valor = 200 },               
+            };
+
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
+
+            // Ação
+            var result = Sut.CalcularTotal();
+
+            // Verificação
+            Sut._total.Should().BeApproximately(810,01, 2);
+        }
+
+        [Fact]
+        public void Caso_8()
+        {
+            // Configuração
+            var items = new List<ItemDTO>()
+            {
+                new ItemDTO { Nome = "Item 1", Peso = 0.3, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 0.3, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 0.3, Valor = 200},
+                new ItemDTO { Nome = "Item 2", Peso = 0.3, Valor = 100 },
+                new ItemDTO { Nome = "Item 3", Peso = 0.4, Valor = 100 },
+                new ItemDTO { Nome = "Item 4", Peso = 0.4, Valor = 200.01 },
+            };
+
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
+
+            // Ação
+            var result = Sut.CalcularTotal();
+
+            // Verificação
+            Sut._total.Should().BeApproximately(810,01, 3);
+        }
+
+        [Fact]
+        public void Caso_9()
+        {
+            // Configuração
+            var items = new List<ItemDTO>()
+            {
+                new ItemDTO { Nome = "Item 1", Peso = 0.3, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.3, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.3, Valor = 100},
+                new ItemDTO { Nome = "Item 2", Peso = 0.3, Valor = 50 },
+                new ItemDTO { Nome = "Item 3", Peso = 0.4, Valor = 50 },
+                new ItemDTO { Nome = "Item 4", Peso = 0.4, Valor = 99 },
+            };
+
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
+
+            // Ação
+            var result = Sut.CalcularTotal();
+
+            // Verificação
+            Sut._total.Should().BeApproximately(509, 3);
+        }
+
+        [Fact]
+        public void Caso_10()
+        {
+            // Configuração
+            var items = new List<ItemDTO>()
+            {
+                new ItemDTO { Nome = "Item 1", Peso = 1, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 1, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 1, Valor = 200},
+                new ItemDTO { Nome = "Item 2", Peso = 1, Valor = 200 },
+                new ItemDTO { Nome = "Item 3", Peso = 1, Valor = 201 },
+            };
+
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
+
+            // Ação
+            var result = Sut.CalcularTotal();
+
+            // Verificação
+            Sut._total.Should().BeApproximately(810.30, 3);
+        }
+
+        [Fact]
+        public void Caso_12()
+        {
+            // Configuração
+            var items = new List<ItemDTO>()
+            {
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 2", Peso = 0.5, Valor = 100},
+                new ItemDTO { Nome = "Item 3", Peso = 0.5, Valor = 99 },
+            };
+
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
+
+            // Ação
+            var result = Sut.CalcularTotal();
+
+            // Verificação
+            Sut._total.Should().BeApproximately(504.17, 3);
+        }
+
+        [Fact]
+        public void Caso_11()
+        {
+            // Configuração
+            var items = new List<ItemDTO>()
+            {
+                new ItemDTO { Nome = "Item 1", Peso = 0,4, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 0,4, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 0,4, Valor = 200},
+                new ItemDTO { Nome = "Item 2", Peso = 0,3, Valor = 200},
+                new ItemDTO { Nome = "Item 3", Peso = 0,3, Valor = 100},
+                new ItemDTO { Nome = "Item 4", Peso = 0,3, Valor = 100},
+            };
+
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
+
+            // Ação
+            var result = Sut.CalcularTotal();
+
+            // Verificação
+            Sut._total.Should().BeApproximately(913.99, 3);
+        }
+
         [Fact]
         public void Caso_13()
         {

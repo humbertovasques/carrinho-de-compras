@@ -119,7 +119,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().Be(800.80);
+            Sut._total.Should().Be(800.80, 0.01);
         }
 
         [Fact]
@@ -142,7 +142,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(460.01, 2);
+            Sut._total.Should().BeApproximately(460.01, 0.01);
         }
 
         [Fact]
@@ -165,7 +165,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(810,01, 2);
+            Sut._total.Should().BeApproximately(810.01, 0.01);
         }
 
         [Fact]
@@ -188,7 +188,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(810,01, 3);
+            Sut._total.Should().BeApproximately(809.51, 0.01);
         }
 
         [Fact]
@@ -211,7 +211,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(509, 3);
+            Sut._total.Should().BeApproximately(508.50, 3);
         }
 
         [Fact]
@@ -233,29 +233,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(810.30, 3);
-        }
-
-        [Fact]
-        public void Caso_12()
-        {
-            // Configuração
-            var items = new List<ItemDTO>()
-            {
-                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
-                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
-                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
-                new ItemDTO { Nome = "Item 2", Peso = 0.5, Valor = 100},
-                new ItemDTO { Nome = "Item 3", Peso = 0.5, Valor = 99 },
-            };
-
-            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
-
-            // Ação
-            var result = Sut.CalcularTotal();
-
-            // Verificação
-            Sut._total.Should().BeApproximately(504.17, 3);
+            Sut._total.Should().BeApproximately(810.30, 0.01);
         }
 
         [Fact]
@@ -278,7 +256,29 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(913.99, 3);
+            Sut._total.Should().BeApproximately(913.49, 0.01);
+        }
+
+        [Fact]
+        public void Caso_12()
+        {
+            // Configuração
+            var items = new List<ItemDTO>()
+            {
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 100},
+                new ItemDTO { Nome = "Item 2", Peso = 0.5, Valor = 100},
+                new ItemDTO { Nome = "Item 3", Peso = 0.5, Valor = 99 },
+            };
+
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
+
+            // Ação
+            var result = Sut.CalcularTotal();
+
+            // Verificação
+            Sut._total.Should().BeApproximately(504.17, 0.01);
         }
 
         [Fact]
@@ -300,7 +300,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(468.83, 2);
+            Sut._total.Should().BeApproximately(468.83, 0.01);
         }
         [Fact]
         public void Caso_14()
@@ -317,7 +317,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(940, 2);
+            Sut._total.Should().BeApproximately(940, 0.01);
         }
         [Fact]
         public void Caso_15()
@@ -334,7 +334,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(840.48, 2);
+            Sut._total.Should().BeApproximately(840.48, 0.01);
         }
         [Fact]
         public void Caso_16()
@@ -356,7 +356,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(708.6, 2);
+            Sut._total.Should().BeApproximately(708.6, 0.01);
         }
         [Fact]
         public void Caso_17()
@@ -374,7 +374,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(650, 2);
+            Sut._total.Should().BeApproximately(650, 0.01);
         }
         [Fact]
         public void Caso_18()
@@ -391,7 +391,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(1150.78, 2);
+            Sut._total.Should().BeApproximately(1150.78, 0.01);
         }
     }
 }

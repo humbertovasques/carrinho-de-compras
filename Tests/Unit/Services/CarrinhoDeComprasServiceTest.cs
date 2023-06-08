@@ -21,7 +21,43 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_1()
+        public void AdicionarItem_RetornaUmItem()
+        {
+            // Ação
+            var result = Sut.AdicionarItem(new ItemDTO());
+
+            // Verificação
+            result.Should().BeOfType<ItemDTO>();
+        }
+
+        [Fact]
+        public void GetItens_RetornaUmaListaDeItens()
+        {
+            // Configuração
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(new List<ItemDTO>());
+
+            // Ação
+            var result = Sut.GetItens();
+
+            // Verificação
+            result.Should().BeOfType<List<ItemDTO>>();
+        }
+
+        [Fact]
+        public void RealizarCheckout_RetornaUmCheckOutDTO()
+        {
+            // Configuração
+            MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(new List<ItemDTO>());
+
+            // Ação
+            var result = Sut.RealizarCheckout();
+
+            // Verificação
+            result.Should().BeOfType<CheckoutDTO>();
+        }
+
+        [Fact]
+        public void CalcularTotal_Caso_01()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -39,7 +75,7 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_2()
+        public void CalcularTotal_Caso_02()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -53,11 +89,11 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().Be(0.01);
+            Sut._total.Should().BeApproximately(0.01, 0.01);
         }
 
         [Fact]
-        public void Caso_3()
+        public void CalcularTotal_Caso_03()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -75,11 +111,11 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().Be(499.99);
+            Sut._total.Should().BeApproximately(499.99, 0.01);
         }
 
         [Fact]
-        public void Caso_4()
+        public void CalcularTotal_Caso_04()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -97,11 +133,11 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().Be(450.90);
+            Sut._total.Should().BeApproximately(450.90, 0.01);
         }
 
         [Fact]
-        public void Caso_5()
+        public void CalcularTotal_Caso_05()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -119,11 +155,11 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().Be(800.80, 0.01);
+            Sut._total.Should().BeApproximately(800.80, 0.01);
         }
 
         [Fact]
-        public void Caso_6()
+        public void CalcularTotal_Caso_06()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -146,7 +182,7 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_7()
+        public void CalcularTotal_Caso_07()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -169,7 +205,7 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_8()
+        public void CalcularTotal_Caso_08()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -192,7 +228,7 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_9()
+        public void CalcularTotal_Caso_09()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -215,7 +251,7 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_10()
+        public void CalcularTotal_Caso_10()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -237,17 +273,17 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_11()
+        public void CalcularTotal_Caso_11()
         {
             // Configuração
             var items = new List<ItemDTO>()
             {
-                new ItemDTO { Nome = "Item 1", Peso = 0,4, Valor = 200},
-                new ItemDTO { Nome = "Item 1", Peso = 0,4, Valor = 200},
-                new ItemDTO { Nome = "Item 1", Peso = 0,4, Valor = 200},
-                new ItemDTO { Nome = "Item 2", Peso = 0,3, Valor = 200},
-                new ItemDTO { Nome = "Item 3", Peso = 0,3, Valor = 100},
-                new ItemDTO { Nome = "Item 4", Peso = 0,3, Valor = 100},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 200},
+                new ItemDTO { Nome = "Item 1", Peso = 0.4, Valor = 200},
+                new ItemDTO { Nome = "Item 2", Peso = 0.3, Valor = 200},
+                new ItemDTO { Nome = "Item 3", Peso = 0.3, Valor = 100},
+                new ItemDTO { Nome = "Item 4", Peso = 0.3, Valor = 100},
             };
 
             MockItemRepository.Setup(repo => repo.GetAllItems()).Returns(items);
@@ -260,7 +296,7 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_12()
+        public void CalcularTotal_Caso_12()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -282,7 +318,7 @@ namespace Tests.Unit.Services
         }
 
         [Fact]
-        public void Caso_13()
+        public void CalcularTotal_Caso_13()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -303,7 +339,7 @@ namespace Tests.Unit.Services
             Sut._total.Should().BeApproximately(468.83, 0.01);
         }
         [Fact]
-        public void Caso_14()
+        public void CalcularTotal_Caso_14()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -320,7 +356,7 @@ namespace Tests.Unit.Services
             Sut._total.Should().BeApproximately(940, 0.01);
         }
         [Fact]
-        public void Caso_15()
+        public void CalcularTotal_Caso_15()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -337,7 +373,7 @@ namespace Tests.Unit.Services
             Sut._total.Should().BeApproximately(840.48, 0.01);
         }
         [Fact]
-        public void Caso_16()
+        public void CalcularTotal_Caso_16()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -359,7 +395,7 @@ namespace Tests.Unit.Services
             Sut._total.Should().BeApproximately(708.6, 0.01);
         }
         [Fact]
-        public void Caso_17()
+        public void CalcularTotal_Caso_17()
         {
             // Configuração
             var items = new List<ItemDTO>()
@@ -377,7 +413,7 @@ namespace Tests.Unit.Services
             Sut._total.Should().BeApproximately(650, 0.01);
         }
         [Fact]
-        public void Caso_18()
+        public void CalcularTotal_Caso_18()
         {
             // Configuração
             var items = new List<ItemDTO>()

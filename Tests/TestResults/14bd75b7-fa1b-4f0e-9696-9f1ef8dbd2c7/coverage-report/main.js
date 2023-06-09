@@ -226,7 +226,7 @@ var assemblies = [
       { "name": "Api.DTOs.ItemDTO", "rp": "Api_ItemDTO.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "Api.Repository.ItemRepository", "rp": "Api_ItemRepository.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 24, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "Api.Services.CarrinhoDeComprasService", "rp": "Api_CarrinhoDeComprasService.html", "cl": 75, "ucl": 0, "cal": 75, "tl": 112, "cb": 28, "tb": 28, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "Program", "rp": "Api_Program.html", "cl": 0, "ucl": 18, "cal": 18, "tl": 37, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Program", "rp": "Api_Program.html", "cl": 15, "ucl": 3, "cal": 18, "tl": 43, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
 ];
 

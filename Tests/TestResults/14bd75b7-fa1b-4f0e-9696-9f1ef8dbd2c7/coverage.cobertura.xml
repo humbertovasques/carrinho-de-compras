@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.9767" branch-rate="1" version="1.9" timestamp="1686327454" lines-covered="126" lines-valid="129" branches-covered="28" branches-valid="28">
+  <sources>
+    <source>C:\Users\Homie\Dev\carrinho-de-compras\Api\</source>
+  </sources>
+  <packages>
+    <package name="Api" line-rate="0.9767" branch-rate="1" complexity="48">
+      <classes>
+        <class name="Program" filename="Program.cs" line-rate="0.8332999999999999" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="CreateApp" signature="(System.String[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Api.Services.CarrinhoDeComprasService" filename="Services\CarrinhoDeComprasService.cs" line-rate="1" branch-rate="1" complexity="32">
+          <methods>
+            <method name="AdicionarItem" signature="(Api.DTOs.ItemDTO)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="1" branch="False" />
+                <line number="19" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="CalcularTotal" signature="()" line-rate="1" branch-rate="1" complexity="28">
+              <lines>
+                <line number="24" hits="18" branch="False" />
+                <line number="25" hits="18" branch="False" />
+                <line number="26" hits="18" branch="False" />
+                <line number="27" hits="18" branch="False" />
+                <line number="28" hits="18" branch="False" />
+                <line number="31" hits="200" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="237" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="32" hits="73" branch="False" />
+                <line number="33" hits="73" branch="False" />
+                <line number="34" hits="73" branch="False" />
+                <line number="37" hits="73" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="87" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="38" hits="18" branch="False" />
+                <line number="40" hits="200" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="165" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="73" branch="False" />
+                <line number="42" hits="73" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="147" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="43" hits="34" branch="False" />
+                <line number="44" hits="34" branch="False" />
+                <line number="45" hits="34" branch="False" />
+                <line number="47" hits="34" branch="False" />
+                <line number="48" hits="73" branch="False" />
+                <line number="51" hits="18" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="192" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="52" hits="6" branch="False" />
+                <line number="53" hits="6" branch="False" />
+                <line number="54" hits="6" branch="False" />
+                <line number="56" hits="18" branch="False" />
+                <line number="57" hits="18" branch="False" />
+                <line number="58" hits="73" branch="False" />
+                <line number="61" hits="18" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="269" type="jump" coverage="100%" />
+                    <condition number="290" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="62" hits="4" branch="False" />
+                <line number="63" hits="4" branch="False" />
+                <line number="64" hits="4" branch="False" />
+                <line number="65" hits="14" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="323" type="jump" coverage="100%" />
+                    <condition number="344" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="66" hits="3" branch="False" />
+                <line number="67" hits="3" branch="False" />
+                <line number="68" hits="3" branch="False" />
+                <line number="69" hits="11" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="386" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="70" hits="2" branch="False" />
+                <line number="71" hits="2" branch="False" />
+                <line number="72" hits="2" branch="False" />
+                <line number="75" hits="18" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="430" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="76" hits="6" branch="False" />
+                <line number="77" hits="6" branch="False" />
+                <line number="78" hits="6" branch="False" />
+                <line number="81" hits="18" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="466" type="jump" coverage="100%" />
+                    <condition number="490" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="82" hits="6" branch="False" />
+                <line number="83" hits="6" branch="False" />
+                <line number="84" hits="6" branch="False" />
+                <line number="86" hits="12" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="526" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="87" hits="6" branch="False" />
+                <line number="88" hits="6" branch="False" />
+                <line number="89" hits="6" branch="False" />
+                <line number="91" hits="18" branch="False" />
+                <line number="92" hits="18" branch="False" />
+                <line number="93" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name="GetItens" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="96" hits="1" branch="False" />
+                <line number="97" hits="1" branch="False" />
+                <line number="98" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="RealizarCheckout" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="101" hits="1" branch="False" />
+                <line number="102" hits="1" branch="False" />
+                <line number="103" hits="1" branch="False" />
+                <line number="104" hits="1" branch="False" />
+                <line number="105" hits="1" branch="False" />
+                <line number="106" hits="1" branch="False" />
+                <line number="107" hits="1" branch="False" />
+                <line number="109" hits="1" branch="False" />
+                <line number="110" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Api.Repository.IItemRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="22" branch="False" />
+                <line number="10" hits="22" branch="False" />
+                <line number="12" hits="22" branch="False" />
+                <line number="13" hits="22" branch="False" />
+                <line number="14" hits="22" branch="False" />
+                <line number="15" hits="22" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="1" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="24" hits="18" branch="False" />
+            <line number="25" hits="18" branch="False" />
+            <line number="26" hits="18" branch="False" />
+            <line number="27" hits="18" branch="False" />
+            <line number="28" hits="18" branch="False" />
+            <line number="31" hits="200" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="237" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="32" hits="73" branch="False" />
+            <line number="33" hits="73" branch="False" />
+            <line number="34" hits="73" branch="False" />
+            <line number="37" hits="73" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="87" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="38" hits="18" branch="False" />
+            <line number="40" hits="200" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="165" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="41" hits="73" branch="False" />
+            <line number="42" hits="73" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="147" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="43" hits="34" branch="False" />
+            <line number="44" hits="34" branch="False" />
+            <line number="45" hits="34" branch="False" />
+            <line number="47" hits="34" branch="False" />
+            <line number="48" hits="73" branch="False" />
+            <line number="51" hits="18" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="192" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="52" hits="6" branch="False" />
+            <line number="53" hits="6" branch="False" />
+            <line number="54" hits="6" branch="False" />
+            <line number="56" hits="18" branch="False" />
+            <line number="57" hits="18" branch="False" />
+            <line number="58" hits="73" branch="False" />
+            <line number="61" hits="18" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="269" type="jump" coverage="100%" />
+                <condition number="290" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="62" hits="4" branch="False" />
+            <line number="63" hits="4" branch="False" />
+            <line number="64" hits="4" branch="False" />
+            <line number="65" hits="14" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="323" type="jump" coverage="100%" />
+                <condition number="344" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="66" hits="3" branch="False" />
+            <line number="67" hits="3" branch="False" />
+            <line number="68" hits="3" branch="False" />
+            <line number="69" hits="11" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="386" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="70" hits="2" branch="False" />
+            <line number="71" hits="2" branch="False" />
+            <line number="72" hits="2" branch="False" />
+            <line number="75" hits="18" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="430" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="76" hits="6" branch="False" />
+            <line number="77" hits="6" branch="False" />
+            <line number="78" hits="6" branch="False" />
+            <line number="81" hits="18" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="466" type="jump" coverage="100%" />
+                <condition number="490" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="82" hits="6" branch="False" />
+            <line number="83" hits="6" branch="False" />
+            <line number="84" hits="6" branch="False" />
+            <line number="86" hits="12" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="526" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="87" hits="6" branch="False" />
+            <line number="88" hits="6" branch="False" />
+            <line number="89" hits="6" branch="False" />
+            <line number="91" hits="18" branch="False" />
+            <line number="92" hits="18" branch="False" />
+            <line number="93" hits="18" branch="False" />
+            <line number="96" hits="1" branch="False" />
+            <line number="97" hits="1" branch="False" />
+            <line number="98" hits="1" branch="False" />
+            <line number="101" hits="1" branch="False" />
+            <line number="102" hits="1" branch="False" />
+            <line number="103" hits="1" branch="False" />
+            <line number="104" hits="1" branch="False" />
+            <line number="105" hits="1" branch="False" />
+            <line number="106" hits="1" branch="False" />
+            <line number="107" hits="1" branch="False" />
+            <line number="109" hits="1" branch="False" />
+            <line number="110" hits="1" branch="False" />
+            <line number="9" hits="22" branch="False" />
+            <line number="10" hits="22" branch="False" />
+            <line number="12" hits="22" branch="False" />
+            <line number="13" hits="22" branch="False" />
+            <line number="14" hits="22" branch="False" />
+            <line number="15" hits="22" branch="False" />
+          </lines>
+        </class>
+        <class name="Api.Repository.ItemRepository" filename="Repository\ItemRepository.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="AddItem" signature="(Api.DTOs.ItemDTO)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="False" />
+                <line number="17" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="GetAllItems" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="3" branch="False" />
+                <line number="10" hits="3" branch="False" />
+                <line number="11" hits="3" branch="False" />
+                <line number="12" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+            <line number="17" hits="4" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="9" hits="3" branch="False" />
+            <line number="10" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
+            <line number="12" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="Api.DTOs.CheckoutDTO" filename="DTOs\CheckoutDTO.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Itens" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Frete" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Total" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="False" />
+            <line number="6" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Api.DTOs.ItemDTO" filename="DTOs\ItemDTO.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Nome" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="222" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Peso" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="149" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Valor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="155" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="222" branch="False" />
+            <line number="6" hits="149" branch="False" />
+            <line number="7" hits="155" branch="False" />
+          </lines>
+        </class>
+        <class name="Api.Controllers.CarrinhoDeComprasController" filename="Controllers\CarrinhoDeComprasController.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="GetItens" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="AdicionarItem" signature="(Api.DTOs.ItemDTO)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="CalcularTotal" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="RealizarCheckout" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Api.Services.ICarrinhoDeComprasService)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="4" branch="False" />
+                <line number="14" hits="4" branch="False" />
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="14" hits="4" branch="False" />
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

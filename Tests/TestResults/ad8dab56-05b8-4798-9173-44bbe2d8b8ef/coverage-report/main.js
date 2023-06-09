@@ -222,10 +222,10 @@ var assemblies = [
     "name": "Api",
     "classes": [
       { "name": "Api.Controllers.CarrinhoDeComprasController", "rp": "Api_CarrinhoDeComprasController.html", "cl": 20, "ucl": 0, "cal": 20, "tl": 46, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "Api.DTOs.CheckoutDTO", "rp": "Api_CheckoutDTO.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Api.DTOs.CheckoutDTO", "rp": "Api_CheckoutDTO.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "Api.DTOs.ItemDTO", "rp": "Api_ItemDTO.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "Api.Repository.ItemRepository", "rp": "Api_ItemRepository.html", "cl": 0, "ucl": 10, "cal": 10, "tl": 24, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "Api.Services.CarrinhoDeComprasService", "rp": "Api_CarrinhoDeComprasService.html", "cl": 42, "ucl": 28, "cal": 70, "tl": 104, "cb": 20, "tb": 26, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Api.Repository.ItemRepository", "rp": "Api_ItemRepository.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 24, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Api.Services.CarrinhoDeComprasService", "rp": "Api_CarrinhoDeComprasService.html", "cl": 75, "ucl": 0, "cal": 75, "tl": 112, "cb": 28, "tb": 28, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "Program", "rp": "Api_Program.html", "cl": 0, "ucl": 18, "cal": 18, "tl": 37, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
 ];

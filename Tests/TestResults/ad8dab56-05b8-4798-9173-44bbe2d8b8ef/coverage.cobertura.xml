@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.7829" branch-rate="0.9333" version="1.9" timestamp="1686252810" lines-covered="101" lines-valid="129" branches-covered="28" branches-valid="30">
+<coverage line-rate="0.8604" branch-rate="0.9333" version="1.9" timestamp="1686320599" lines-covered="111" lines-valid="129" branches-covered="28" branches-valid="30">
   <sources>
     <source>C:\Users\Homie\Dev\carrinho-de-compras\Api\</source>
   </sources>
   <packages>
-    <package name="Api" line-rate="0.7829" branch-rate="0.9333" complexity="48">
+    <package name="Api" line-rate="0.8604" branch-rate="0.9333" complexity="48">
       <classes>
         <class name="Program" filename="Program.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
@@ -330,42 +330,42 @@
             <line number="15" hits="21" branch="False" />
           </lines>
         </class>
-        <class name="Api.Repository.ItemRepository" filename="Repository\ItemRepository.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="Api.Repository.ItemRepository" filename="Repository\ItemRepository.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
-            <method name="AddItem" signature="(Api.DTOs.ItemDTO)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="AddItem" signature="(Api.DTOs.ItemDTO)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="False" />
+                <line number="17" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="GetAllItems" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="GetAllItems" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
+                <line number="9" hits="2" branch="False" />
+                <line number="10" hits="2" branch="False" />
+                <line number="11" hits="2" branch="False" />
+                <line number="12" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+            <line number="17" hits="4" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="9" hits="2" branch="False" />
+            <line number="10" hits="2" branch="False" />
+            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="2" branch="False" />
           </lines>
         </class>
         <class name="Api.DTOs.CheckoutDTO" filename="DTOs\CheckoutDTO.cs" line-rate="1" branch-rate="1" complexity="3">
@@ -396,24 +396,24 @@
           <methods>
             <method name="get_Nome" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="218" branch="False" />
+                <line number="5" hits="222" branch="False" />
               </lines>
             </method>
             <method name="get_Peso" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="145" branch="False" />
+                <line number="6" hits="149" branch="False" />
               </lines>
             </method>
             <method name="get_Valor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="151" branch="False" />
+                <line number="7" hits="155" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="218" branch="False" />
-            <line number="6" hits="145" branch="False" />
-            <line number="7" hits="151" branch="False" />
+            <line number="5" hits="222" branch="False" />
+            <line number="6" hits="149" branch="False" />
+            <line number="7" hits="155" branch="False" />
           </lines>
         </class>
         <class name="Api.Controllers.CarrinhoDeComprasController" filename="Controllers\CarrinhoDeComprasController.cs" line-rate="1" branch-rate="1" complexity="5">

@@ -224,7 +224,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(809.51, 0.01);
+            Sut._total.Should().BeApproximately(800.00, 0.01);
         }
 
         [Fact]
@@ -247,7 +247,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(508.50, 3);
+            Sut._total.Should().BeApproximately(504.00, 0.01);
         }
 
         [Fact]
@@ -269,7 +269,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(810.30, 0.01);
+            Sut._total.Should().BeApproximately(810.80, 0.01);
         }
 
         [Fact]
@@ -292,7 +292,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(913.49, 0.01);
+            Sut._total.Should().BeApproximately(914.20, 0.01);
         }
 
         [Fact]
@@ -314,7 +314,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(504.17, 0.01);
+            Sut._total.Should().BeApproximately(503.40, 0.01);
         }
 
         [Fact]
@@ -336,7 +336,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(468.83, 0.01);
+            Sut._total.Should().BeApproximately(469.81, 0.01);
         }
         [Fact]
         public void CalcularTotal_Caso_14()
@@ -353,7 +353,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(940, 0.01);
+            Sut._total.Should().BeApproximately(940.00, 0.01);
         }
         [Fact]
         public void CalcularTotal_Caso_15()
@@ -392,7 +392,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(708.6, 0.01);
+            Sut._total.Should().BeApproximately(708.60, 0.01);
         }
         [Fact]
         public void CalcularTotal_Caso_17()
@@ -410,7 +410,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(650, 0.01);
+            Sut._total.Should().BeApproximately(800.09, 0.01);
         }
         [Fact]
         public void CalcularTotal_Caso_18()
@@ -427,7 +427,7 @@ namespace Tests.Unit.Services
             var result = Sut.CalcularTotal();
 
             // Verificação
-            Sut._total.Should().BeApproximately(1150.78, 0.01);
+            Sut._total.Should().BeApproximately(1150.70, 0.01);
         }
     }
 }

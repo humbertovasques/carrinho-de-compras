@@ -42,6 +42,7 @@ dotnet test
 ```
 
 ## ▶️Como Verificar a Cobertura dos Testes
+
 ```shell
 #Inicie o terminal dentro do repositório clonado e utilize o comando dotnet test --collect:"XPlat Code Coverage" para gerar um relatorio de testes em .xml na pasta TestResults
 dotnet test --collect:"XPlat Code Coverage"
@@ -49,8 +50,10 @@ dotnet test --collect:"XPlat Code Coverage"
 dotnet tool install -g dotnet-reportgenerator-globaltool
 #Dento da pasta do relatorio em xml gerado execute o comando reportgenerator "-reports:coverage.cobertura.xml" "-targetdir:coverage-report" "-reporttypes:Html" e abra no navegador o html gerado
 reportgenerator "-reports:coverage.cobertura.xml" "-targetdir:coverage-report" "-reporttypes:Html"
-
 ```
+
+![1686328099885](image/README/1686328099885.png)
+
 ## 🤝 Autores
 
 -[Humberto Vasques](https://github.com/humbertovasques)

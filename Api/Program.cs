@@ -1,9 +1,15 @@
 using Api.Services;
 using Api.Repository;
+using Microsoft.Extensions.DependencyInjection;
 
 public class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
+    {
+        CreateApp(args).Run();
+    }
+
+    public static WebApplication CreateApp(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +38,6 @@ public class Program
 
         app.MapControllers();
 
-        app.Run();
+        return app;
     }
 }
